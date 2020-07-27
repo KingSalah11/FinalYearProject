@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="2"
+    >
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        >
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/step_counter"
+            style="@style/StepText"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/view_margin_16"
+            android:layout_marginTop="@dimen/view_margin_16"
+            tools:text="Step count = 110"
+            />
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_start"
+            android:text="@string/start_tracking"
+            android:layout_gravity="center"
+            />
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_stop"
+            android:layout_marginTop="@dimen/view_margin_16"
+            android:text="@string/stop_tracking"
+            android:layout_gravity="center"
+            />
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/view_margin_16"
+            android:id="@+id/btn_save"
+            android:text="@string/save_tracking"
+            android:layout_gravity="center"
+            />
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/view_margin_16"
+            android:layout_gravity="center"
+            android:text="@string/statistics"
+            android:id="@+id/btn_statistics" />
+    </LinearLayout>
+
+</LinearLayout>
